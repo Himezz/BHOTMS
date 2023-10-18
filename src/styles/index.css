@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.weare{
+  font-family: 'Noto Serif', serif;
+}
+.logo{
+    font-family: 'Mea Culpa';
+    font-weight: 600;
+}
+.venue{font-family: 'Roboto';}
+@media (max-width: 1150px) {
+  .logo {
+    font-size: 2rem; /* Adjust the size for smaller screens */
+  }
+}
+@media (max-width: 1000px) {
+    .logo {
+      font-size: 2rem; /* Adjust the size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.7rem; /* Adjust the size for even smaller screens */
+    }
+  }
+  .hover\:underline-middle::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; /* Change to your desired color */
+    bottom: 0;
+    left: 50%; /* Start from the middle */
+    transform: translateX(-50%); /* Center the animation */
+    transition: width 0.4s ease-in-out; /* Adjust the duration for your desired speed */
+  }
+  
+  .hover\:underline-middle:hover::before {
+    width: 100%; /* Expand to the edges on hover */
+  }
+  .underline-active{ color: rgb(226, 226, 25); }
+
+  @media (max-width: 376px) {
+.text-lol-size {
+         font-size: small;}
+}
+@media (max-width: 376px) {
+  .text-lol-size2 {
+           font-size: x-small;}
+  }
+.modal-font-header{
+  font-family: "Baskervville" , "Cormorant Garamond", "serif"
+}
+.text-size{
+  
+  font-size: 1.6rem;
+}
+.contact-font{
+  font-family: 'Figtree', sans-serif;
+}
+.border-r-1{
+  border-right-width: .5px;
+}
+.border-b-1{
+  border-bottom-width: .5px;
+}
+
+.color-lol{
+border-color:#BC9C6F ;}
+
+.custom-button:hover {
+  background-color: #BC9C6F; /* Your custom color code */
+}
+@media (max-width: 639px) {
+  .magrin-lol {
+           margin-bottom: 1rem;}
+  }
+ 
+@media (max-width: 640px) {
+  .magrin-lol2 {
+           margin-bottom: 2rem;}
+  }
+   .colorgold{
+    background-color: #BC9C6F;
+   }
+   .goldtext{
+    color: #BC9C6F;
+   }
+   .outline-color-venue{
+    outline-color:#BC9C6F; 
+   }
+   .linkfont{font-family: 'Montserrat', sans-serif;}
+   .custom-link:hover {
+    color: #BC9C6F; /* Your custom color code */
+  }
