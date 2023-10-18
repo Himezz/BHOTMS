@@ -2,8 +2,8 @@ import React from "react";
 
 const Venue2 = ({ imageURL, VenueName, Capacity }) => {
   return (
-    <div className="w-[483px]  h-full flex   color-lol border-2  mx-auto ">
-      <div className=" relative flex  flex-col  w-[500px] h-[350px] ">
+    <div className="w-full max-w-[600px] h-full flex  mx-auto color-lol border-2   ">
+      <div className=" relative flex  flex-col  w-full h-[350px] ">
         <div
           style={{ backgroundImage: `url(${imageURL})`, borderWidth:'3px', borderColor:'#BC9C6F',borderLeft: '2px' }}
           className="w-full h-full  bg-center bg-cover "

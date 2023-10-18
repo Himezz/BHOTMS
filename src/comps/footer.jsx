@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className="w-full pl-4">
         <p className="text-white  font-semibold text-sm mb-4 mt-7">Subscribe to get the latest newsletter</p>
-         <input className="p-3 w-[75%] rounded-sm " type="email" name="" id="" />
+         <input className="p-3 w-[70%] rounded-sm " type="email" name="" id="" />
          <button className=" p-3 colorgold rounded-sm text-white " > SUBSCRIBE</button>
       </div>
 

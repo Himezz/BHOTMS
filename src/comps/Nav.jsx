@@ -26,7 +26,7 @@ export const Nav = ({ isOpen, modalToggle }) => {
   };
 
   return ( <div className="sticky bg-white top-0 z-50">
-    <div className="h-10 flex bg-white justify-between tracking-wide font-semibold goldtext items-center mx-8 border-b-1  color-lol "> 
+    <div className="h-10 flex bg-white justify-between tracking-wide font-semibold goldtext items-center mx-2 sm:mx-8 border-b-1  color-lol "> 
     <ul className=" text-xs sm:text-base">OFFERS</ul>
     <ul className="goldtext font-semibold sm:text-base text-xs text-center   ">
            
@@ -48,9 +48,9 @@ export const Nav = ({ isOpen, modalToggle }) => {
       <p className="sm:text-base text-base">901.690.3671</p>
       </div>
     </div>
-    <div className="flex items-center bg-white justify-between max-w-[1700px] h-16 sm:h-24  mx-auto px-4 ">
+    <div className="flex items-center bg-white justify-between max-w-[1700px] h-16 sm:h-24  mx-auto px-2 sm:px-4 ">
       <ul>
-        <li className="text-2xl md:text-3xl tracking-wide font-medium w-full goldtext pl-7 modal-font-header">
+        <li className="text-2xl md:text-3xl tracking-wide font-medium w-full goldtext sm:pl-7 modal-font-header">
           BANQUET HALLS
           <li className="text-sm font-serif text-center modal-font-header">
             OF THE-MID SOUTH
