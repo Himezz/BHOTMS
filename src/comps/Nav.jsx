@@ -43,8 +43,8 @@ export const Nav = ({ isOpen, modalToggle }) => {
             />
            </ul>
     <div className="flex justify-between  ">
-    <button  className="h-[15px] w-[16px] mr-2 mt-1 "> <img src="\phone.svg" alt="" /></button>
-      <button  className="h-[15px] w-[16px] mr-2 mt-1"> <img src="\chat.svg" alt="" /></button>
+    <button  className="h-[15px] w-[16px] mr-2 mt-1 "> <img src=".\phone.svg" alt="" /></button>
+      <button  className="h-[15px] w-[16px] mr-2 mt-1"> <img src=".\chat.svg" alt="" /></button>
       <p className="sm:text-base text-base">901.690.3671</p>
       </div>
     </div>

@@ -11,11 +11,9 @@ import { AiFillStar } from "react-icons/ai";
 Swiper;
 const Slider = () => {
 
-    const checkScreenWidth = () => {
-    return   window.innerWidth > 300
-    }
+
   return (<>
-    <p className="text-center goldtext modal-font-header text-3xl">Testimonials</p>
+    <p className="text-center goldtext modal-font-header text-3xl ">Testimonials</p>
     <div className="flex  items-center justify-center flex-col h-[400px] shadow-inner mx-4 bg-white">
       <Swiper
       style={{
