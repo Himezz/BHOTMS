@@ -24,7 +24,7 @@ import { VenueSlider } from "./VenueSlider"
      
        </div>
        <div className="bg-[#eeecec]  p-5">
-       <div className=" w-full h-[300px] bg-cover" style={{backgroundImage: 'url(/bombayballroomblack.jpg)'}}> </div>
+       <div className=" w-full h-[300px] bg-cover" style={{backgroundImage: 'url(./bombayballroomblack.jpg)'}}> </div>
        <div className="bg-slate-800 min-h-[626px] max-h-[900px] p-7">
         <p className="text-center text-white text-2xl modal-font-header pt-9">Amenities</p>
          <p className="text-slate-300 text-center  sm:p-3">If your taste is rooted in tradition yet seeks modern elegance, the Bombay Ballroom in Memphis, TN, is the embodiment of both. Classic archways juxtapose sleek wooden floors, while tables draped in monochrome hues showcase gold tableware and intricate crystal centerpieces. Combined with plush, regal seating and ambient lighting, the Ballroom strikes a balance between the age-old charm and contemporary sophistication, crafting an unparalleled backdrop for memorable events.</p> 
@@ -42,10 +42,20 @@ import { VenueSlider } from "./VenueSlider"
           </div>
          </div>
 
-
+       </div >
+           
+       <div className="min-h-[500px] p-3">
+        <div className="w-full h-[200px] bg-cover" style={{backgroundImage:'url(./bombaycake.jpg)'}}></div> 
+        <p className="text-center modal-font-header text-2xl text-slate-700 mt-8">Customize Your Event At This Grand Venue</p>
+        <p className="text-center p-4">
+At the Grand Ballroom in Memphis, we understand how much time and energy goes into planning an event. Because of this, we believe that everything should be as perfect as possible, and the event should be as unique as you want it to be. This is why we offer amenities that can be tailored to your exact vision. From the dishes to the decor to the dance floor decal, we are happy to work with you to shape our versatile ballroom to meet your specifications.</p>
        </div>
 
-      </>
+      <div className="bg-[#eeecec] h-[1000px]">
+    <p className="modal-font-header text-2xl text-center pt-[5.4rem] ">Event We Hosts</p>
+     <div className="border "></div>
+      </div>
+      </> 
     )
   }
 
