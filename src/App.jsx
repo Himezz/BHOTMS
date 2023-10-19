@@ -8,6 +8,7 @@ import { Pricing } from "./comps/Pricing";
 import Aboutus from "./comps/aboutus";
 import Mymodal from "./comps/mymodal";
 import Footer from "./comps/footer";
+import BombayBallroom from "./comps/venues/bombayBallroom";
 
  export const App = () => {
   const [modal, setModal] =useState(false)
@@ -24,7 +25,7 @@ const modalToggle = () => {
       <Route path="/AboutUs" element={<Aboutus/>}/>
         <Route path="/BHOTMS/" element={<Home/>}/>
         <Route path="/pricing" element={<Pricing/>}/>
-     
+         <Route path="/BHOTMS/BombayBallroom" element={<BombayBallroom/>}/>
       </Routes>
       <Mymodal isOpen={modal} modalToggle={modalToggle}/>
      <Footer/>
