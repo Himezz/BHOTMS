@@ -4,9 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
-import { imageList, videoList } from "../../constants/images";
 
-export const VenueSlider = ({active}) => {
+
+export const VenueSlider = ({active,imageList,videoList}) => {
   return (
     <> 
       <div className="w-full">

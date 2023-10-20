@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import {Nav} from './comps/Nav'
 import { Home } from "./comps/Home";
@@ -8,6 +8,7 @@ import { Pricing } from "./comps/Pricing";
 import Aboutus from "./comps/aboutus";
 import Mymodal from "./comps/mymodal";
 import Footer from "./comps/footer";
+
 import BombayBallroom from "./comps/venues/bombayBallroom";
 
  export const App = () => {
