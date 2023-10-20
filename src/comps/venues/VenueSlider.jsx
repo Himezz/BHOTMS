@@ -4,11 +4,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
-import { bombayballroom } from "../../constants/images";
+import { imageList, videoList } from "../../constants/images";
 
-export const VenueSlider = () => {
+export const VenueSlider = ({active}) => {
   return (
-    <>
+    <> 
       <div className="w-full">
         <Swiper
           style={{
@@ -28,18 +28,36 @@ export const VenueSlider = () => {
           autoplay={true}
           modules={[Pagination, Autoplay]}
           className="max-w-[90%] lg:h-[500px] mx-auto"
-        >
-          {bombayballroom.map((photo) => (
+        > 
+     
+        
+          {  active === 'PHOTOS' ?
+          imageList.map((photo) => (
             <SwiperSlide key={photo} className="flex justify-center items-center">
               <img
                 src={photo}
                 alt="Bombay Ballroom"
                 className="transition-transform duration-500 ease-in-out w-full object-cover h-[250px] sm:h-[400px] md:h-[500px] lg:h-[400px]"
               />
+              
             </SwiperSlide>
-          ))}
+          )) : active ==='VIDEOS' ? videoList.map((video) => (
+           <SwiperSlide key={video} className="flex justify-center items-center">
+          <video  controls
+          src={video}
+           alt='Bombay Ballroom' 
+           className="  w-[full]  h-[250px] sm:h-[400px] md:h-[500px] lg:h-[400px]">
+
+          </video>
+           </SwiperSlide>
+
+            
+
+          )) : null
+        }
         </Swiper>
       </div>
+  
     </>
   );
 };

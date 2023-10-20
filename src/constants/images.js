@@ -1,7 +1,22 @@
 
 
-export const bombayballroom = [
+
+
+export const imageList = [
     "./01_bba_at_dusk.jpg",
-    "./bombay-room.jpg",
-    "./bombay-room.jpg"
-]
+    "./bombay-room.jpg", 
+    "./bbimage2.jpg",
+    "./bbimage3.jpg",
+    "./bbimage4.jpg",
+    "./bbimage5.jpg",
+    "./bbimage6.jpg",
+    "./bbimage7.jpg",
+    "./bbimage8.jpg",
+ ]
+
+
+ export const videoList = [
+ "./bbvideo2.mp4",
+ "./bbvideo3.mp4",
+
+];
