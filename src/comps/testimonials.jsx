@@ -55,7 +55,7 @@ const Testimonials = () => {
         animate={shouldAnimate}
         animationDirection="right" 
       /> 
-   
+  
     </div>
   );
 };

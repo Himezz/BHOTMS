@@ -13,7 +13,7 @@ export const Nav = ({ isOpen, modalToggle }) => {
     handleNav(); // Call handleNav
   };
   const linksData = [
-    { to: "/BHOTMS/", text: "HOME" },
+    { to: "", text: "HOME" },
     { to: "/Pricing", text: "PRICING" },
     { to: "/Catering", text: "CATERING" },
     { to: "/AboutUs", text: "ABOUT US" },
