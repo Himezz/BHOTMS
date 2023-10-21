@@ -103,3 +103,6 @@ border-color:#BC9C6F ;}
    .custom-link:hover {
     color: #BC9C6F; /* Your custom color code */
   }
+  .video{
+    height: calc(.5625 * 80vw);
+  }

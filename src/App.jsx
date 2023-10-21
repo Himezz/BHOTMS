@@ -10,6 +10,7 @@ import Mymodal from "./comps/mymodal";
 import Footer from "./comps/footer";
 
 import BombayBallroom from "./comps/venues/bombayBallroom";
+import AshinaHall from "./comps/venues/aashinahall";
 
  export const App = () => {
   const [modal, setModal] =useState(false)
@@ -26,7 +27,8 @@ const modalToggle = () => {
       <Route path="/AboutUs" element={<Aboutus/>}/>
         <Route path="/" element={<Home/>}/>
         <Route path="/pricing" element={<Pricing/>}/>
-         <Route path="/BHOTMS/BombayBallroom" element={<BombayBallroom/>}/>
+         <Route path="/BombayBallroom" element={<BombayBallroom/>}/>
+         <Route path="/AashinaHall" element={<AshinaHall/>}/>
       </Routes>
       <Mymodal isOpen={modal} modalToggle={modalToggle}/>
      <Footer/>

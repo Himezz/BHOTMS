@@ -52,7 +52,7 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
       </div>
       <div className="bg-[#eeecec]  md:flex p-5">
         <div
-          className=" md:w-[50%] h-[700px] bg-cover"
+          className=" md:w-[50%] h-[400px] md:h-[700px] bg-cover"
           style={{ backgroundImage: `url(${img1})` }}
         >
           {" "}
@@ -80,16 +80,16 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
         </div>
       </div>
 
-      <div className="min-h-[460px] md:pt-0 md:pb-0 md:flex p-3 border border-black">
+      <div className="min-h-[460px] md:pt-0 md:pb-0 md:flex p-3 md:p-0 border border-black">
         <div
-          className="w-full md:w-[45%] h-[200px] md:h-[460px] bg-cover"
+          className="w-full md:w-[45%] md:h-[500px] h-[200px] lg:h-[460px] bg-cover"
           style={{ backgroundImage: `url(${img2})` }}
         ></div>
-         <div className="md:w-[55%] md:h-[460px]  md:pt-0 md:p-10">
-        <p className="text-center md:text-left md:text-5xl line modal-font-header text-2xl text-slate-700 mt-8">
+         <div className="md:w-[55%] md: lg:h-[460px] lg:pt-0 lg:p-10">
+        <p className="text-center md:text-left md:p-0 md:pl-4 lg:text-left lg:text-5xl line modal-font-header text-2xl text-slate-700 mt-8">
           Customize Your Event At This Grand Venue
         </p>
-        <p className="text-center md:text-left md:p-0 md:mt-6 p-4">
+        <p className="text-center lg md:text-left lg:p-0 lg:mt-6 p-4">
           At the {desc4} in Memphis, we understand how much time and
           energy goes into planning an event. Because of this, we believe that
           everything should be as perfect as possible, and the event should be

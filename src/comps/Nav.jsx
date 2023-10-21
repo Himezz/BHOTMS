@@ -83,7 +83,7 @@ export const Nav = ({ isOpen, modalToggle }) => {
         </button>
      
       <div onClick={handleNav} className="block lg:hidden goldtext">
-        {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={32} />}
       </div>
       <div
         className={

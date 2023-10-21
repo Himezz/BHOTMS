@@ -19,7 +19,7 @@ const Venue2 = ({ imageURL, VenueName, Capacity,VenueNameDirectory,desc,adress})
           <p className="text-center mt-4 text-slate-600">{adress}</p>
           <p className="goldtext font-semibold text-2xl text-center mt-5  ">{Capacity}</p>
           <div className="w-full flex justify-center  mb-6 z-10 mt-10" >
-          <Link to={`/BHOTMS/${VenueNameDirectory}`} className=" bg-white py-3 px-7 text-[#BC9C6F] hover:border-black hover:text-white border-[#BC9C6F] hover:bg-black text-sm    font-bold border-2 " >
+          <Link to={`/${VenueNameDirectory}`} className=" bg-white py-3 px-7 text-[#BC9C6F] hover:border-black hover:text-white border-[#BC9C6F] hover:bg-black text-sm    font-bold border-2 " >
               EXPLORE VENUE
           </Link> 
           </div>
