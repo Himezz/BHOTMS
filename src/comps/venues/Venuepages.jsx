@@ -15,8 +15,8 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
 
   return (
     <>
-      <div className="w-full mt-3 gap-7 flex flex-col justify-center  px-5 ">
-        <p className="text-center modal-font-header md:text-4xl text-[1.65rem] tracking-wider text-slate-600">
+      <div className="w-full mt-3 gap-7 flex mx-auto flex-col justify-center max-w-[1300px] px-5 ">
+        <p className="text-center modal-font-header md:text-[2.79rem] text-[1.65rem] tracking-wider text-slate-600">
          {title}
         </p>
         <p className="text-center modal-font-header md:text-xl tracking-wider">
@@ -25,39 +25,48 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
         <p className="text-center modal-font-header md:text-xl tracking-wider">
          {desc2}
         </p>
-      </div>
- 
-      <div className="mt-[5rem] flex flex-col -row gap-4">
-        <div className="flex-col flex md:flex-row gap-2">
-        <button onClick={() => handleButtonClick('PHOTOS')} className={active === "VIDEOS" ? "border-2 text-[#BC9C6F] border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[35%] w-[95%] mx-auto text-center" : "bg-[#BC9C6F] border-2 text-white border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[35%] w-[95%] mx-auto text-center"}>
+      </div> 
+
+ <div className=" w-full  flex  justify-center ">
+      <div className="mt-[5rem] flex flex-col justify-center min-w-[200px] gap-5 max-w-[1700px] ">
+        <div className="flex-col flex md:flex-row justify-center   items-center max-w-[1900px] gap-2 md:gap-10">
+        <button onClick={() => handleButtonClick('PHOTOS')} className={active === "VIDEOS" ? "border-2 text-[#BC9C6F] border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[30%] w-[95%]  text-center" : "bg-[#BC9C6F] border-2 text-white border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[33%] w-[95%] text-center"}>
         PHOTOS
       </button>
-      <button onClick={() => handleButtonClick('VIDEOS')} className= {active === "PHOTOS" ? "border-2 text-[#BC9C6F] border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[35%] w-[95%] mx-auto text-center" : "bg-[#BC9C6F] border-2 text-white border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[35%] w-[95%] mx-auto text-center"}>
-        VIDEOS
+      <button onClick={() => handleButtonClick('VIDEOS')} className= {active === "PHOTOS" ? "border-2 text-[#BC9C6F] border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[33%] w-[95%]  text-center" : "bg-[#BC9C6F] border-2 text-white border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[35%] w-[95%]  text-center"}>
+        VIDEOS 
       </button>
         </div>
+      
+          <div className="flex flex-col justify-center items-center">
         <VenueSlider active={active} imageList={imageList} videoList={videoList} />
         <button className="mb-[4rem] mt-[3rem] md:mb-[rem10] py-3 w-[180px] text-sm mx-auto bg-slate-700 text-white font-bold">
           BOOKING INQUIRY
         </button>
+       
+        </div>
+      </div>
+    </div>
 
-        <div className="bg-[#eeecec] flex flex-col gap-4 p-5">
-          <p className="text-center modal-font-header md:text-4xl text-slate-800 text-2xl">
+      <div className="bg-[#eeecec] w-full flex flex-col justify-center items-center gap-4 p-5">
+       <div className="max-w-[1400px] ">
+          <p className="text-center modal-font-header  md:text-4xl text-slate-800 text-2xl">
             Experience Our Unique Amenities At Grand Ballroom
           </p>
           <p className="text-center p-4 mdLtext-lg text-base text-slate-700 ">
            {desc8}
           </p>
+          </div>
         </div>
-      </div>
-      <div className="bg-[#eeecec]  md:flex p-5">
+    <div className="bg-[#eeecec] w-full pb-20 flex justify-center ">
+      <div className="bg-[#eeecec] max-w-[1250px]   md:flex p-5">
         <div
-          className=" md:w-[50%] h-[400px] md:h-[700px] bg-cover"
+          className=" md:w-[50%] h-[400px] md:h-[700px] lg:h-[575px] bg-cover"
           style={{ backgroundImage: `url(${img1})` }}
         >
           {" "}
         </div>
-        <div className="bg-slate-800 md:w-[50%] min-h-[626px] max-h-[900px] p-7">
+        <div className="bg-slate-800 md:w-[50%] min-h-[526px] max-h-[900px] p-7">
           <p className="text-center md:text-left text-white text-4xl tracking-wid md:font-semibold font-medium modal-font-header pt-5">
             Amenities
           </p>
@@ -79,13 +88,14 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
           </div>
         </div>
       </div>
-
-      <div className="min-h-[460px] md:pt-0 md:pb-0 md:flex p-3 md:p-0 border border-black">
+     </div>
+<div className="flex bg-[#eeecec] justify-center">
+      <div className="min-h-[460px] md:pt-0 md:pb-0 md:flex px-3 md:p-0 border bg-white  max-w-[1250px] border-black">
         <div
-          className="w-full md:w-[45%] md:h-[500px] h-[200px] lg:h-[460px] bg-cover"
+          className="w-full md:w-[45%] md:h-[500px] h-[230px] lg:h-[460px] bg-cover"
           style={{ backgroundImage: `url(${img2})` }}
         ></div>
-         <div className="md:w-[55%] md: lg:h-[460px] lg:pt-0 lg:p-10">
+         <div className="md:w-[55%] md: lg:h-[460px] lg:pt-0 lg:p-10 ">
         <p className="text-center md:text-left md:p-0 md:pl-4 lg:text-left lg:text-5xl line modal-font-header text-2xl text-slate-700 mt-8">
           Customize Your Event At This Grand Venue
         </p>
@@ -99,8 +109,9 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
           versatile ballroom to meet your specifications.
         </p>
         </div>
-      </div>
 
+      </div>
+</div>
       <div className="bg-[#eeecec]  p-4 min-h-[1000px] max-h-[2000px]">
         <p className="modal-font-header md:text-4xl md:pt-[5rem]  text-2xl text-center  pt-[3rem] mb-5  font-medium ">
           Events We Host

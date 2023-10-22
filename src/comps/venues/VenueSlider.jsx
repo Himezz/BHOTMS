@@ -46,7 +46,7 @@ console.log(autoplayConfig);
               <img
                 src={photo}
                 alt="Bombay Ballroom"
-                className="transition-transform duration-500 ease-in-out w-[90%]  video"
+                className="transition-transform duration-500 ease-in-out w-[90%] max-w-[1100px]  max-h-[600px]  "
               />
               
             </SwiperSlide>
@@ -55,7 +55,7 @@ console.log(autoplayConfig);
           <video  controls
           src={video}
            alt='Bombay Ballroom' 
-           className="  w-[90%] video">
+           className="  w-[90%] max-w-[1100px] max-h-[700px]">
 
           </video>
            </SwiperSlide>

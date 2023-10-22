@@ -3,10 +3,12 @@
 
 
 export const bbimageList = [
-    "./01_bba_at_dusk.jpg",
-    "./bombay-room.jpg", 
+
+
     "./bbimage2.jpg",
-    "./bbimage3.jpg",
+    "./bbimage3.jpg", 
+    "./bombay-room.jpg", 
+    "./01_bba_at_dusk.jpg",
     "./bbimage4.jpg",
     "./bbimage5.jpg",
     "./bbimage6.jpg",

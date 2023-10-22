@@ -106,3 +106,13 @@ border-color:#BC9C6F ;}
   .video{
     height: calc(.5625 * 80vw);
   }
+  .swiper-pagination-bullet {
+    border: 1px solid #BC9C6F;
+}
+.custom-swiper .swiper-pagination-bullet {
+  transform: translateY(-670%); /* Vertically center each bullet */
+}
+.custom-swiper .swiper-pagination {
+  bottom: auto; /* Reset the default bottom positioning */
+  top: 64%;     /* Move to the middle of the Swiper container */
+}
