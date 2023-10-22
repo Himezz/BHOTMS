@@ -6,6 +6,8 @@ import Testimonials from "./testimonials";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from './slider'
 import { Autoplay,Pagination } from "swiper/modules";
+import EmailForm from "./emailForm";
+
 export const Home = () => {
 
   return ( <> <div className="flex w-full justify-center items-center"> <div className="  w-full max-w-[1700px]">
@@ -44,6 +46,7 @@ export const Home = () => {
 
     </div>
     </Swiper>
+    <EmailForm/>
   <Slider/>
     </>
   );

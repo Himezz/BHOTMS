@@ -111,8 +111,19 @@ border-color:#BC9C6F ;}
 }
 .custom-swiper .swiper-pagination-bullet {
   transform: translateY(-670%); /* Vertically center each bullet */
+ pointer-events: none;
 }
 .custom-swiper .swiper-pagination {
   bottom: auto; /* Reset the default bottom positioning */
   top: 64%;     /* Move to the middle of the Swiper container */
+  pointer-events: none;
+}
+
+.no-select {
+  user-select: none; /* standard syntax */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }

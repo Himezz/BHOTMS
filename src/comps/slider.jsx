@@ -13,7 +13,7 @@ const Slider = () => {
 
 
   return (<>
-    <p className="text-center goldtext modal-font-header text-3xl ">Testimonials</p>
+    <p className="text-center goldtext modal-font-header text-3xl ">Customer Reviews</p>
     <div className="flex  items-center justify-center flex-col h-[400px]  mx-4 mb-4 border shadow-[#665c5c] border-[#BC9C6F] bg-[#0000000e]">
       <Swiper
       style={{
