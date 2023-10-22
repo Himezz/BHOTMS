@@ -1,121 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.weare{
-  font-family: 'Noto Serif', serif;
+.weare {
+  font-family: "Noto Serif", serif;
 }
-.logo{
-    font-family: 'Mea Culpa';
-    font-weight: 600;
+.logo {
+  font-family: "Mea Culpa";
+  font-weight: 600;
 }
-.venue{font-family: 'Roboto';}
+.venue {
+  font-family: "Roboto";
+}
 @media (max-width: 1150px) {
   .logo {
     font-size: 2rem; /* Adjust the size for smaller screens */
   }
 }
 @media (max-width: 1000px) {
-    .logo {
-      font-size: 2rem; /* Adjust the size for smaller screens */
-    }
+  .logo {
+    font-size: 2rem; /* Adjust the size for smaller screens */
   }
-  
-  @media (max-width: 480px) {
-    .logo {
-      font-size: 1.7rem; /* Adjust the size for even smaller screens */
-    }
-  }
-  .hover\:underline-middle::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #ffffff; /* Change to your desired color */
-    bottom: 0;
-    left: 50%; /* Start from the middle */
-    transform: translateX(-50%); /* Center the animation */
-    transition: width 0.4s ease-in-out; /* Adjust the duration for your desired speed */
-  }
-  
-  .hover\:underline-middle:hover::before {
-    width: 100%; /* Expand to the edges on hover */
-  }
-  .underline-active{ color: rgb(226, 226, 25); }
+}
 
-  @media (max-width: 376px) {
-.text-lol-size {
-         font-size: small;}
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.7rem; /* Adjust the size for even smaller screens */
+  }
+}
+.hover\:underline-middle::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Change to your desired color */
+  bottom: 0;
+  left: 50%; /* Start from the middle */
+  transform: translateX(-50%); /* Center the animation */
+  transition: width 0.4s ease-in-out; /* Adjust the duration for your desired speed */
+}
+
+.hover\:underline-middle:hover::before {
+  width: 100%; /* Expand to the edges on hover */
+}
+.underline-active {
+  color: rgb(226, 226, 25);
+}
+
+@media (max-width: 376px) {
+  .text-lol-size {
+    font-size: small;
+  }
 }
 @media (max-width: 376px) {
   .text-lol-size2 {
-           font-size: x-small;}
+    font-size: x-small;
   }
-.modal-font-header{
-  font-family: "Baskervville" , "Cormorant Garamond", "serif"
 }
-.text-size{
-  
+.modal-font-header {
+  font-family: "Baskervville", "Cormorant Garamond", "serif";
+}
+.text-size {
   font-size: 1.6rem;
 }
-.contact-font{
-  font-family: 'Figtree', sans-serif;
+.contact-font {
+  font-family: "Figtree", sans-serif;
 }
-.border-r-1{
-  border-right-width: .5px;
+.border-r-1 {
+  border-right-width: 0.5px;
 }
-.border-b-1{
-  border-bottom-width: .5px;
+.border-b-1 {
+  border-bottom-width: 0.5px;
 }
 
-.color-lol{
-border-color:#BC9C6F ;}
+.color-lol {
+  border-color: #bc9c6f;
+}
 
 .custom-button:hover {
-  background-color: #BC9C6F; /* Your custom color code */
+  background-color: #bc9c6f; /* Your custom color code */
 }
 @media (max-width: 639px) {
   .magrin-lol {
-           margin-bottom: 1rem;}
+    margin-bottom: 1rem;
   }
- 
+}
+
 @media (max-width: 640px) {
   .magrin-lol2 {
-           margin-bottom: 2rem;}
+    margin-bottom: 2rem;
   }
-   .colorgold{
-    background-color: #BC9C6F;
-   }
-   .goldtext{
-    color: #BC9C6F;
-   }
-   .outline-color-venue{
-    outline-color:#BC9C6F; 
-   }
-   .linkfont{font-family: 'Montserrat', sans-serif;}
-   .custom-link:hover {
-    color: #BC9C6F; /* Your custom color code */
-  }
-  .video{
-    height: calc(.5625 * 80vw);
-  }
-  .swiper-pagination-bullet {
-    border: 1px solid #BC9C6F;
+}
+.colorgold {
+  background-color: #bc9c6f;
+}
+.goldtext {
+  color: #bc9c6f;
+}
+.outline-color-venue {
+  outline-color: #bc9c6f;
+}
+.linkfont {
+  font-family: "Montserrat", sans-serif;
+}
+.custom-link:hover {
+  color: #bc9c6f; /* Your custom color code */
+}
+.video {
+  height: calc(0.5625 * 80vw);
+}
+.swiper-pagination-bullet {
+  border: 1px solid #bc9c6f;
 }
 .custom-swiper .swiper-pagination-bullet {
   transform: translateY(-670%); /* Vertically center each bullet */
- pointer-events: none;
+  pointer-events: none;
 }
 .custom-swiper .swiper-pagination {
   bottom: auto; /* Reset the default bottom positioning */
-  top: 64%;     /* Move to the middle of the Swiper container */
+  top: 64%; /* Move to the middle of the Swiper container */
   pointer-events: none;
 }
 
@@ -126,4 +137,25 @@ border-color:#BC9C6F ;}
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.opensans ::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.date-container {
+  position: relative;
+  width: 330px;
+}
+
+.date-container label {
+  position: absolute;
+  top: 16px; /* Adjust as needed to position the label */
+  left: 14px; /* Adjust as needed */
+  pointer-events: none; /* To ensure the label doesn't interfere with input */
+  transition: opacity 0.3s;
+}
+
+.date-container input:valid + label {
+  opacity: 0;
 }
