@@ -16,7 +16,8 @@ export const VenueSlider = ({active,imageList,videoList}) => {
 console.log(autoplayConfig);
   return (
     <> 
-      <div className="w-full ">
+
+      <div className="w-[90%] max-w-[1200px]  ">
         <Swiper
         key={active}
           style={{
@@ -36,17 +37,17 @@ console.log(autoplayConfig);
           
            autoplay={autoplayConfig }
           modules={[Pagination, Autoplay]}
-          className="w-[full] md:video "
+          className="w-full md:video "
         > 
      
         
           {  active === 'PHOTOS' ?
           imageList.map((photo) => (
-            <SwiperSlide key={photo} className="flex justify-center items-center">
+            <SwiperSlide key={photo} className="flex justify-center   items-center">
               <img
                 src={photo}
                 alt="Bombay Ballroom"
-                className="transition-transform duration-500 ease-in-out w-[90%] max-w-[1100px]  max-h-[600px]  "
+                className="transition-transform duration-500 ease-in-out w-full  p-2 max-w-[1300px]  max-h-[600px]  "
               />
               
             </SwiperSlide>
@@ -55,7 +56,7 @@ console.log(autoplayConfig);
           <video  controls
           src={video}
            alt='Bombay Ballroom' 
-           className="  w-[90%] max-w-[1100px] max-h-[700px]">
+           className="  w-[100%] max-w-[1000px] max-h-[700px]">
 
           </video>
            </SwiperSlide>
@@ -65,8 +66,8 @@ console.log(autoplayConfig);
           )) : null
         }
         </Swiper>
-      </div>
-  
+ 
+  </div>
     </>
   );
 };

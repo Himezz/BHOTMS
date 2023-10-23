@@ -45,7 +45,7 @@ export const Nav = ({ isOpen, modalToggle }) => {
     <div className="flex justify-between  ">
     <button  className="h-[13px] w-[13px]  sm:h-[16px] sm:w-[16px] mr-2 mt-1 "> <img src=".\phone.svg" alt="" /></button>
       <button  className="h-[13px] w-[13px] sm:h-[16px] sm:w-[16px] mr-2 mt-1"> <img src=".\chat.svg" alt="" /></button>
-      <p className="sm:text-base text-xs">901.690.3671</p>
+      <p className="sm:text-base text-sm">901.690.3671</p>
       </div>
     </div>
     <div className="flex items-center bg-white justify-between max-w-[1700px] h-16 sm:h-24  mx-auto px-2 sm:px-4 ">

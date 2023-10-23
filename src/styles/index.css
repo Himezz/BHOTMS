@@ -121,12 +121,12 @@
   border: 1px solid #bc9c6f;
 }
 .custom-swiper .swiper-pagination-bullet {
-  transform: translateY(-670%); /* Vertically center each bullet */
+  transform: translateY(-1870%); /* Vertically center each bullet */
   pointer-events: none;
 }
 .custom-swiper .swiper-pagination {
   bottom: auto; /* Reset the default bottom positioning */
-  top: 64%; /* Move to the middle of the Swiper container */
+  top: 66%; /* Move to the middle of the Swiper container */
   pointer-events: none;
 }
 

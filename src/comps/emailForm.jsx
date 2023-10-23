@@ -24,7 +24,7 @@ const CustomHeader = props => {
           </div>
           <div className="react-datepicker__navigation-container">
               <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}></button>
-              <button onClick={increaseMonth} disabled={nextMonthButtonDisabled}></button>
+              <button onClick={increaseMonth} enabled={nextMonthButtonDisabled}></button>
           </div>
       </div>
   ); }

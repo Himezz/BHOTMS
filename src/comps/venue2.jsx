@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Venue2 = ({ imageURL, VenueName, Capacity,VenueNameDirectory,desc,adress}) => {
   return (<>
     
-    <div className="w-[full] h-full flex justify-center items-center border- border-2  ">
+    <div className="w-[full] md:hidden h-full flex justify-center items-center border- border-2  ">
       <div className=" relative flex  flex-col  w-full  h-[550px] ">
         <div
           style={{ backgroundImage: `url(${imageURL})`,  }}

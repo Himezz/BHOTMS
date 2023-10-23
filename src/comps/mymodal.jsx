@@ -1,4 +1,4 @@
-import React from "react";
+
 import Modalsections from "./modal-sections";
 import Modalsection2 from "./modal-sections-2";
 
