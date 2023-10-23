@@ -159,3 +159,17 @@
 .date-container input:valid + label {
   opacity: 0;
 }
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  width: 330px;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 0.90rem;
+  outline: 1px solid gray;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  letter-spacing: 0.1em; /* Adjust this based on the actual value you want */
+}
