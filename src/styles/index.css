@@ -121,7 +121,7 @@
   border: 1px solid #bc9c6f;
 }
 .custom-swiper .swiper-pagination-bullet {
-  transform: translateY(-1870%); /* Vertically center each bullet */
+  transform: translateY(-740%); /* Vertically center each bullet */
   pointer-events: none;
 }
 .custom-swiper .swiper-pagination {

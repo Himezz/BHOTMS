@@ -17,7 +17,7 @@ console.log(autoplayConfig);
   return (
     <> 
 
-      <div className="w-[90%] max-w-[1200px]  ">
+      <div className="w-[90%] max-w-[1200px] min-w-[350px]   ">
         <Swiper
         key={active}
           style={{
@@ -43,11 +43,11 @@ console.log(autoplayConfig);
         
           {  active === 'PHOTOS' ?
           imageList.map((photo) => (
-            <SwiperSlide key={photo} className="flex justify-center   items-center">
+            <SwiperSlide key={photo} className="flex justify-center  items-center">
               <img
                 src={photo}
                 alt="Bombay Ballroom"
-                className="transition-transform duration-500 ease-in-out w-full  p-2 max-w-[1300px]  max-h-[600px]  "
+                className="transition-transform duration-500 ease-in-out w-full   p-2 max-w-[1300px] min-h-[250px] max-h-[600px]  "
               />
               
             </SwiperSlide>
@@ -56,7 +56,7 @@ console.log(autoplayConfig);
           <video  controls
           src={video}
            alt='Bombay Ballroom' 
-           className="  w-[100%] max-w-[1000px] max-h-[700px]">
+           className="  w-[100%] max-w-[1000px] min-w-[200px] min-h-[200px] max-h-[700px]">
 
           </video>
            </SwiperSlide>

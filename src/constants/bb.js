@@ -22,3 +22,13 @@ export const bbimageList = [
  "./bbvideo3.mp4",
 
 ];
+export const barimageList = [
+    "./barttlett/bartlettHome.jpg",
+   "./barttlett/bartlett1.jpg", 
+
+   "./barttlett/bartlett4.jpg",
+
+]
+export const barvideoList = [
+    "./barttlett/bartlettvid1.mp4",
+]

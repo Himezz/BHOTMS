@@ -61,7 +61,7 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
     <div className="bg-[#eeecec] w-full pb-20 flex justify-center ">
       <div className="bg-[#eeecec] max-w-[1250px]   md:flex p-5">
         <div
-          className=" md:w-[50%] h-[400px] md:h-[700px] lg:h-[575px] bg-cover"
+          className=" md:w-[50%] h-[340px] md:h-[700px] lg:h-[645px] bg-cover"
           style={{ backgroundImage: `url(${img1})` }}
         >
           {" "}
@@ -100,7 +100,7 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
           Customize Your Event At This Grand Venue
         </p>
         <p className="text-center lg md:text-left lg:p-0 lg:mt-6 p-4">
-          At the {desc4} in Memphis, we understand how much time and
+          At the {desc5} in Memphis, we understand how much time and
           energy goes into planning an event. Because of this, we believe that
           everything should be as perfect as possible, and the event should be
           as unique as you want it to be. This is why we offer amenities that
@@ -190,7 +190,7 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
       </div> 
 
       <div className="min-h-[500px] md:min-h-[200px] md:max-h-[1000px] md:flex  border-2 md:p-0 border-black p-3"> 
-         <div className="h-[250px] w-full md:min-h-[460px] md:w-[50%] bg-cover" style={{ backgroundImage:"url(./diningop2.jpg)"}}></div>
+         <div className="h-[230px] w-full md:min-h-[460px] md:w-[50%] bg-cover" style={{ backgroundImage:"url(./barttlett/diningop1.jpg)"}}></div>
          <div className="p-4 md:w-[50%] md:mt-4 md:pl-8">
          <p className="modal-font-header text-2xl md:text-4xl md:text-left text-center">Dining Options</p>
          <p className="text-center mt-5 md:text-left md:text-lg ">Our experienced chefs will set your event apart with a menu that will be especially designed for you and your guests. With a wide variety of flavor profile options from around the world, you’re sure to find something deliciously ideal for your event. All of our banquet halls Serve the finest mouth-watering dishes for out guests. </p>
