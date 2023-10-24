@@ -17,7 +17,7 @@ const Modalsections = ({
     >
       <div className=" justify-center   flex  w-[full] ">
         <div
-          className="h-[90px] w-[100px]"
+          className="h-[80px] w-[80px]"
           style={{ width: width, height: height }}
         >
           <div

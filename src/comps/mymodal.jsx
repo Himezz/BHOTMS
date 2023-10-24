@@ -22,16 +22,18 @@ const Mymodal = ({isOpen,modalToggle}) => {
         </div> 
 
         <div className="flex-row hidden md:flex mt-8 items-stretch gap-2 h-[400px]">
-          <Modalsections  imageurl={"/book-removebg-preview.png"}
+          <Modalsections  imageurl={"./inquiresvgs/calendar-svgrepo-com.svg"}
             text1={"CHECK AVAILABILITY & SECURE YOUR DATE"}
             text2={
               "Place your deposit with confidence. Change your event date or cancel your booking for a full refund within 7 days."
             }
             text3={"SECURE YOUR DATE"}
             shouldRenderBorder={true}
+            height={'57px'}
+            width={'58px'}
           />
           <Modalsections
-            imageurl={"/tour-removebg-preview.png"}
+            imageurl={"./inquiresvgs/building-house-landmark-svgrepo-com.svg"}
             text1={"SCHEDULE A TOUR"}
             text2={
               "Explore our venues with our team to discuss how we can bring your vision to life."
@@ -40,7 +42,7 @@ const Mymodal = ({isOpen,modalToggle}) => {
             shouldRenderBorder={true}
           />
           <Modalsections
-            imageurl={"/contact.svg"}
+            imageurl={"./inquiresvgs/handshake-deal-svgrepo-com.svg"}
             text1={"CONTACT US"}
             text2={
               "Connect with our team of experts to tell us more about your special day."
@@ -52,9 +54,9 @@ const Mymodal = ({isOpen,modalToggle}) => {
         </div>
 
         <div className=" md:hidden  flex-col items-stretch gap-2 h-[400px]"> 
-        <Modalsection2 imageurl={"/book-removebg-preview.png"} text1={'CHECK AVAILABILITY & SECURE YOUR DATE'} text2={'Place your deposit with confidence. Change your event date or cancel your booking for a full refund within 7 days.'} text3={'SECURE YOUR DATE'} width={'110px'} height={'80px'} minWidth={'77px'}/>
-        <Modalsection2 imageurl={"/tour-removebg-preview.png"} text1={'SCHEDULE A TOUR'} text2={'Explore our venues with our team to discuss how we can bring your vision to life.'} text3={'SCHEDULE A TOUR'} width={'130px'} height={'80px'} minWidth={'77px'}/>
-        <Modalsection2 imageurl={"/contact.svg"} text1={'CONTACT US'} text2={'Connect with our team of experts to tell us more about your special day.'} text3={'CONTACT US'} width={'60px'} height={'60px'} minWidth={'60px'} /> 
+        <Modalsection2 imageurl={"./inquiresvgs/calendar-svgrepo-com.svg"} text1={'CHECK AVAILABILITY & SECURE YOUR DATE'} text2={'Place your deposit with confidence. Change your event date or cancel your booking for a full refund within 7 days.'} text3={'SECURE YOUR DATE'} width={'45px'} height={'45px'} minWidth={'45px'}/>
+        <Modalsection2 imageurl={"./inquiresvgs/building-house-landmark-svgrepo-com.svg"}  text1={'SCHEDULE A TOUR'} text2={'Explore our venues with our team to discuss how we can bring your vision to life.'} text3={'SCHEDULE A TOUR'} width={'60px'} height={'60px'} minWidth={'60px'}/>
+        <Modalsection2   imageurl={"./inquiresvgs/handshake-deal-svgrepo-com.svg"} text1={'CONTACT US'} text2={'Connect with our team of experts to tell us more about your special day.'} text3={'CONTACT US'} width={'50px'} height={'50px'} minWidth={'50px'} /> 
         </div>
       </div>
     </div>

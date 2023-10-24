@@ -17,7 +17,7 @@ const Modalsection2 = ({
       }`}
     >
       <div className={"flex flex-row h-full"}>
-        <div className="w-[110px] justify-center flex ">
+        <div className="w-[110px] justify-center items-center flex ">
           <div
             className={" w-full    "}
             style={{ maxWidth: width, height: height, minWidth: minWidth }}
