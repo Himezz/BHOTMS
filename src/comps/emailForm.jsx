@@ -115,7 +115,7 @@ const EmailForm = () => {
 
   return (
     <>
-      <div className="bg-[#eeecec8c] h-[790px] p-10">
+      <div className="bg-[#eeecec8c] h-full p-10">
         <p className="text-center font-semibold modal-font-header text-xl tracking-widest mb-[4rem] ">
           LET'S GET THIS PARTY STARTED
         </p>

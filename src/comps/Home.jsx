@@ -40,7 +40,9 @@ import EmailForm from "./emailForm";
 
     </div>
     </Swiper>
+   
     <EmailForm/>
+  
   <Slider/>
     </>
   );
