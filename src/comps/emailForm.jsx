@@ -86,8 +86,22 @@ const EmailForm = () => {
     },
     validationSchema: userSchema,
     onSubmit: async (values) => {
-
-    
+      const templateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        from_number: values.mobile_number,
+        event_date: values.event_date,
+        event_type: values.event_type,
+        event_location: values.event_location,
+        guest_count: values.guest_count,
+      };
+      
+      emailjs.send('<YOUR_SERVICE_ID>', '<YOUR_TEMPLATE_ID>', templateParams, '<YOUR_USER_ID>')
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        }, (error) => {
+          console.log('FAILED...', error);
+        });
     },
   });
   console.log(errors)

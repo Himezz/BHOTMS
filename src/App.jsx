@@ -10,7 +10,7 @@ const BombayBallroom = lazy(() => import("./comps/venues/bombayBallroom"));
 const Pricing = lazy(() => import("./comps/Pricing"));
 const Aboutus = lazy(() => import("./comps/aboutus"));
 const AshinaHall = lazy(() => import("./comps/venues/aashinahall"));
-
+const AllOccasion = lazy(() => import("./comps/venues/allOccasion")) 
 export const App = () => {
   const [modal, setModal] = useState(false);
   const modalToggle = () => {
@@ -52,6 +52,11 @@ export const App = () => {
       <Route path="/bartlettBanquetHall" element={
       <Suspense fallback={<div></div>}> 
           <BartlettBanquetHall/>
+      </Suspense>}/>
+
+      <Route path="/AllOccasion" element={
+      <Suspense fallback={<div></div>}> 
+          <AllOccasion/>
       </Suspense>}/>
      
       </Routes>

@@ -1,8 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect,useRef } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Typed from "react-typed";
+import Typed from "typed.js";
 export const Nav = ({ isOpen, modalToggle }) => {
+  const typedRef = useRef(null); // This ref is added
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        "WE ARE WEDDING EXPERTS!",
+        "WE ARE EVENT SPECIALIST!",
+        "WE ARE PARTY PERFECTIONIST!",
+        "WE ARE OCCASION VISIONARIES!",
+      ],
+      typeSpeed: 90,
+      backSpeed: 70,
+      loop: true,
+    };
+
+    const typed = new Typed(typedRef.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   const [nav, setNav] = useState();
 
   const handleNav = () => {
@@ -28,20 +50,9 @@ export const Nav = ({ isOpen, modalToggle }) => {
   return ( <div className="sticky bg-white top-0 z-50">
     <div className="h-10 flex bg-white justify-between tracking-wide font-semibold goldtext items-center mx-2 sm:mx-8 border-b-1  color-lol "> 
     <ul className=" text-xs sm:text-base">OFFERS</ul>
-    <ul className="goldtext font-semibold sm:text-base text-xs text-center   ">
-           
-            <Typed
-              strings={[
-                "WE ARE WEDDING EXPERTS!",
-                "WE ARE EVENT SPECIALIST!",
-                "WE ARE PARTY PERFECTIONIST!",
-                "WE ARE OCCASION VISIONARIES!",
-              ]}
-              typeSpeed={90}
-              backSpeed={70}
-              loop
-            />
-           </ul>
+    <ul className="goldtext font-semibold sm:text-base text-xs text-center">
+        <span ref={typedRef}></span>
+      </ul>
     <div className="flex justify-between  ">
     <button  className="h-[13px] w-[13px]  sm:h-[16px] sm:w-[16px] mr-2 mt-1 "> <img src=".\phone.svg" alt="" /></button>
       <button  className="h-[13px] w-[13px] sm:h-[16px] sm:w-[16px] mr-2 mt-1"> <img src=".\chat.svg" alt="" /></button>

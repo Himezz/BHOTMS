@@ -12,8 +12,8 @@ import EmailForm from "./emailForm";
     <div className=" md:h-[600px] lg:h-[800px]    hidden md:grid  grid-cols-2 gap-2 bg-white mb-2 mx-3 ">
       <Venue imageURL={'./bombay-room.jpg' } VenueName={"Bombay Ballroom"} Capacity={"Capacity: 450 Guests"} VenueNameDirectory={"BombayBallroom"}/>
       <Venue imageURL={'./pink.webp'} VenueName={"Aashiana Hall"} Capacity={"Capacity: 350 Guests"}  VenueNameDirectory={"AashinaHall"} />
-      <Venue imageURL={'./bartlettHome.jpg'} VenueName={"Bartlett Banquet Hall"} Capacity={"Capacity: 150 Guests"}/>
-      <Venue imageURL={'./All-Occasion-Pink.jpg'} VenueName={"All Occasion"} Capacity={"Capacity: 150 Guests"}/>
+      <Venue imageURL={'./bartlettHome.jpg'} VenueName={"Bartlett Banquet Hall"} Capacity={"Capacity: 150 Guests"} VenueNameDirectory={"BartlettBanquetHall"}/>
+      <Venue imageURL={'./All-Occasion-Pink.jpg'} VenueName={"All Occasion"} Capacity={"Capacity: 150 Guests"} VenueNameDirectory={"AllOccasion"}/>
     </div></div></div>
     <Swiper
      className="md:hidden bg-[#f8f8f8] custom-swiper " 

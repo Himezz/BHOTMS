@@ -28,7 +28,7 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
       </div> 
 
  <div className=" w-full  flex  justify-center ">
-      <div className="mt-[5rem] flex flex-col justify-center min-w-[200px] gap-5 max-w-[1700px] ">
+      <div className="mt-[5rem] flex flex-col justify-center min-w-[90%] gap-5 max-w-[1700px] ">
         <div className="flex-col flex md:flex-row justify-center   items-center max-w-[1900px] gap-2 md:gap-10">
         <button onClick={() => handleButtonClick('PHOTOS')} className={active === "VIDEOS" ? "border-2 text-[#BC9C6F] border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[30%] w-[95%]  text-center" : "bg-[#BC9C6F] border-2 text-white border-[#BC9C6F] font-semibold  text-sm tracking-wide p-3 md:w-[33%] w-[95%] text-center"}>
         PHOTOS

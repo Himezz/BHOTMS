@@ -17,7 +17,7 @@ console.log(autoplayConfig);
   return (
     <> 
 
-      <div className="w-[90%] max-w-[1200px] min-w-[350px]   ">
+      <div className="w-[90%]    ">
         <Swiper
         key={active}
           style={{
@@ -37,7 +37,7 @@ console.log(autoplayConfig);
           
            autoplay={autoplayConfig }
           modules={[Pagination, Autoplay]}
-          className="w-full md:video "
+          className="w-full  "
         > 
      
         
@@ -47,21 +47,22 @@ console.log(autoplayConfig);
               <img
                 src={photo}
                 alt="Bombay Ballroom"
-                className="transition-transform duration-500 ease-in-out w-full   p-2 max-w-[1300px] min-h-[250px] max-h-[600px]  "
+                className="transition-transform duration-500 ease-in-out  w-full object-cover  p-2 max-w-[1200px] min-h-[300px] max-h-[600px]  "
               />
               
             </SwiperSlide>
           )) : active ==='VIDEOS' ? videoList.map((video) => (
+        
            <SwiperSlide key={video} className="flex justify-center  items-center">
           <video  controls
           src={video}
            alt='Bombay Ballroom' 
-           className="  w-[100%] max-w-[1000px] min-w-[200px] min-h-[200px] max-h-[700px]">
+          className="transition-transform duration-500 ease-in-out  w-full min-w-[350px]  max-w-[1200px] p-2   ">
 
           </video>
            </SwiperSlide>
 
-            
+        
 
           )) : null
         }
