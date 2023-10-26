@@ -18,7 +18,7 @@ import {
 
 const CustomInput = ({ value, onClick, placeholder, isUndecided, setOpen, setFieldValue, }) => (
   <div
-    className={  "w-[330px] outline-1 outline outline-gray-500 bg-white p-[.90rem] opensans "}
+    className={  "w-[330px]  sm:w-[590px] lg:w-[430px] outline-1 outline outline-gray-500 bg-white p-[.90rem] opensans "}
     value={value}
     onClick={() => {
       setOpen(true);
@@ -113,6 +113,8 @@ const EmailForm = () => {
   const [open, setOpen] = useState(false);
   const [isUndecided, setIsUndecided] = useState(false);
 
+
+
   return (
     <>
       <div className="bg-[#eeecec8c] h-full p-10">
@@ -122,15 +124,17 @@ const EmailForm = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col justify-center items-center gap-4"
+          className="flex flex-col  justify-center items-center lg:justify-center lg:items-center  gap-4"
         >
+        <div className=" flex flex-col lg:flex-row lg:gap-9 gap-4">
+          <div className="flex flex-col gap-4">
           <div>
           <input
             name="name"
             type="text"
             onChange={handleChange}
             value={values.name}
-            className={  errors.name && touched.name ? "w-[330px] outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] outline-1 outline outline-[gray] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" }
+            className={  errors.name && touched.name ? "w-[330px] sm:w-[590px] lg:w-[430px]  outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] sm:w-[590px] lg:w-[430px]  outline-1 outline outline-[gray] p-[.90rem]   placeholder:text-black placeholder:tracking-widest opensans" }
             placeholder="FIRST & LAST NAME"
             onBlur={handleBlur}
           />
@@ -142,7 +146,7 @@ const EmailForm = () => {
             type="text"
             onChange={handleChange}
             value={values.mobile_number}
-            className={  errors.mobile_number && touched.mobile_number ? "w-[330px] outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] outline-1 outline outline-[gray] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" }
+            className={  errors.mobile_number && touched.mobile_number ? "w-[330px] sm:w-[590px] lg:w-[430px] outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] sm:w-[590px] lg:w-[430px] outline-1 outline outline-[gray] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" }
             placeholder="MOBILE NUMBER"
             onBlur={handleBlur}
           />
@@ -154,12 +158,13 @@ const EmailForm = () => {
             type="text"
             onChange={handleChange}
             value={values.email}
-            className={  errors.email && touched.email ? "w-[330px] outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] outline-1 outline outline-[gray] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" }
+            className={  errors.email && touched.email ? "w-[330px] sm:w-[590px] lg:w-[430px]  outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] sm:w-[590px] lg:w-[430px]  outline-1 outline outline-[gray] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" }
             placeholder="EMAIL ADDRESS"
             onBlur={handleBlur}
           />
                { errors.email && touched.email ?   <p className="text-red-500">{errors.email}</p> : ""}
           </div>
+       <div className="w-[330px] sm:w-[590px] lg:w-[430px]">
           <DatePicker
             name="event_date"
             selected={values.event_date}
@@ -169,7 +174,6 @@ const EmailForm = () => {
             onCalendarOpen={() => setOpen(true)}
             onCalendarClose={() => setOpen(false)}
             placeholderText="EVENT DATE"
-          
             onBlur={() => setFieldTouched("event_date", true)}
             renderCustomHeader={(props) => (
               <CustomHeader
@@ -188,10 +192,14 @@ const EmailForm = () => {
               />
             }
           />
-          <div>
+          </div>
+          </div>
+
+          <div className="flex flex-col gap-4">
+          <div  className="w-[330px] sm:w-[590px] lg:w-[430px]">
           <Select
             name="event_type"
-            styles={ errors.event_type && touched.event_type ? errorCustomStyles : customStyles}
+            styles={ errors.event_type && touched.event_type ? errorCustomStyles : customStyles }
             value={eventOptions.find(
               (option) => option.value === values.event_type
             )}
@@ -205,7 +213,8 @@ const EmailForm = () => {
           />
           { errors.event_type && touched.event_type ?   <p className="text-red-500">{errors.event_type}</p> : ""}
           </div>
-          <div>
+          <div className="w-[330px] sm:w-[590px] lg:w-[430px]">
+            
           <Select
             name="event_location"
             styles={ errors.event_location && touched.event_location ? errorCustomStyles : customStyles}
@@ -215,6 +224,7 @@ const EmailForm = () => {
             )}
             placeholder={"EVENT LOCATION"}
             onBlur={() => setFieldTouched("event_location", true)}
+            className="w-full "
             onChange={(option) => {
               setFieldValue(
                 "event_location",
@@ -232,12 +242,15 @@ const EmailForm = () => {
             type="number"
             value={values.guest_count}
             onChange={handleChange}
-            className={  errors.guest_count && touched.guest_count ? "w-[330px] outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] outline-1 outline outline-[gray] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" }
+            className={  errors.guest_count && touched.guest_count ? "w-[330px] sm:w-[590px] lg:w-[430px]  outline-1 outline outline-[#ff0000] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" :  "w-[330px] sm:w-[590px]  lg:w-[430px] outline-1 outline outline-[gray] p-[.90rem]  placeholder:text-black placeholder:tracking-widest opensans" }
             placeholder="GUEST COUNT (ESTIMATED)"
             onBlur={handleBlur}
           />
            { errors.guest_count && touched.guest_count ?   <p className="text-red-500">{errors.guest_count}</p> : ""}
-          </div>
+          </div> 
+       </div>
+       </div>
+       
           <button
             type="submit"
             className="border-2 mt-6 border-[#BC9C6F] w-[330px] py-[.90rem] text-sm tracking-widest font-bold"

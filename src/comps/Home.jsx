@@ -5,9 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from './slider'
 import { Autoplay,Pagination } from "swiper/modules";
 import EmailForm from "./emailForm";
-
+import { useEffect } from "react";
  const Home = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return ( <> <div className="flex w-full justify-center items-center"> <div className="  w-full max-w-[1200px]">
     <div className=" md:h-[600px] lg:h-[800px]    hidden md:grid  grid-cols-2 gap-2 bg-white mb-2 mx-3 ">
       <Venue imageURL={'./bombay-room.jpg' } VenueName={"Bombay Ballroom"} Capacity={"Capacity: 450 Guests"} VenueNameDirectory={"BombayBallroom"}/>

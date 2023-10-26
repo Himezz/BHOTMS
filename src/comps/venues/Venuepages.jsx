@@ -2,7 +2,7 @@ import React from "react";
 import { VenueSlider } from "./VenueSlider";
 import { Link } from "react-router-dom";
 import Buttonselector from "../buttonselector";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,adress,ul1,img2,desc4,desc5,desc6,desc7,desc8}) => {
   const [active, setActiveButton] = useState('PHOTOS');
    
@@ -12,6 +12,10 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
       }
   
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -195,7 +199,7 @@ const Venuepage = ({title, imageList,videoList,desc1,desc2,img1,desc3,capacity,a
          <p className="modal-font-header text-2xl md:text-4xl md:text-left text-center">Dining Options</p>
          <p className="text-center mt-5 md:text-left md:text-lg ">Our experienced chefs will set your event apart with a menu that will be especially designed for you and your guests. With a wide variety of flavor profile options from around the world, you’re sure to find something deliciously ideal for your event. All of our banquet halls Serve the finest mouth-watering dishes for out guests. </p>
          <div className="flex justify-center mt-5 md:justify-start">
-         <Link className="border-2 p-3 px-6 font-semibold text-sm md:mt-6 border-black tracking-wide">SEE DINING OPTIONS</Link>
+         <Link to={'/catering'} className="border-2 p-3 px-6 font-semibold text-sm md:mt-6 border-black tracking-wide">SEE DINING OPTIONS</Link>
          </div>
          </div>
         </div>

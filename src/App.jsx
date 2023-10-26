@@ -4,6 +4,7 @@ import { Nav } from './comps/Nav';
 import Mymodal from "./comps/mymodal";
 import Footer from "./comps/footer";
 import BartlettBanquetHall from "./comps/venues/barrlettHall";
+import WeddingBuffetMenu from "./comps/catering";
 
 const Home = lazy(() => import("./comps/Home.jsx"));
 const BombayBallroom = lazy(() => import("./comps/venues/bombayBallroom"));
@@ -57,6 +58,11 @@ export const App = () => {
       <Route path="/AllOccasion" element={
       <Suspense fallback={<div></div>}> 
           <AllOccasion/>
+      </Suspense>}/>
+     
+      <Route path="/Catering" element={
+      <Suspense fallback={<div></div>}> 
+          <WeddingBuffetMenu/>
       </Suspense>}/>
      
       </Routes>

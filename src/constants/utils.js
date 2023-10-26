@@ -27,12 +27,11 @@ export const eventOptions = [
      { value: 'Undecided', label: 'Undecided' },
 
   ];
-
   export const customStyles = {
     control: (provided) => ({
       ...provided,
-      width: '330px',
-      padding: '.60rem',
+   
+      padding: '.48rem',
       borderColor: 'gray', 
       color: 'black',
       letterSpacing: '0.1em', 
@@ -49,8 +48,8 @@ export const eventOptions = [
   export const errorCustomStyles = {
     control: (provided) => ({
       ...provided,
-      width: '330px',
-      padding: '.60rem',
+    
+    padding: '.60rem',
       borderColor: 'red', 
       color: 'black',
       letterSpacing: '0.1em', 
