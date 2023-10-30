@@ -7,7 +7,9 @@ import DatePicker from "react-datepicker";
 import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import { FiCalendar } from "react-icons/fi";
-
+const emailjsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const emailjsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const emailjsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 //components and utilities
 import {
   customStyles,
@@ -74,7 +76,7 @@ const CustomHeader = (props) => {
   );
 };
 const EmailForm = () => {
-  const {values,handleBlur, errors, touched, handleChange,handleSubmit,setFieldValue, setFieldTouched} = useFormik({
+  const {values,handleBlur, errors, touched, handleChange,handleSubmit,setFieldValue, setFieldTouched,resetForm} = useFormik({
     initialValues: {
       name: "",
       mobile_number: "",
@@ -96,12 +98,19 @@ const EmailForm = () => {
         guest_count: values.guest_count,
       };
       
-      emailjs.send('<YOUR_SERVICE_ID>', '<YOUR_TEMPLATE_ID>', templateParams, '<YOUR_USER_ID>')
-        .then((response) => {
-          console.log('SUCCESS!', response.status, response.text);
-        }, (error) => {
-          console.log('FAILED...', error);
-        });
+      emailjs.send(emailjsServiceId, emailjsTemplateId, templateParams, emailjsPublicKey)
+      .then((response) => {
+        console.log(response.text)
+        setSubmissionStatus("SUCCESFUL")
+
+      }, (error) => {
+        console.log(error.text)
+        setSubmissionStatus("ERROR")
+      } 
+       
+      )
+      
+      
     },
   });
   console.log(errors)
@@ -112,7 +121,7 @@ const EmailForm = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [open, setOpen] = useState(false);
   const [isUndecided, setIsUndecided] = useState(false);
-
+  const [submissionStatus, setSubmissionStatus] = useState("");
 
 
   return (
@@ -257,6 +266,7 @@ const EmailForm = () => {
           >
             SUBMIT
           </button>{" "}
+          {submissionStatus === "SUCCESFUL" ? <div className="text-green-700">{`Form submission: ${submissionStatus}`}</div> : submissionStatus === 'ERROR' ? <div className="text-red-700">{`Form submission: ${submissionStatus}`}</div> : ""}
           {/* Add this if you want a submit button */}
         </form>
       </div>

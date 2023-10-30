@@ -17,7 +17,7 @@ export const userSchema = yup.object().shape({
     event_data: yup
       .date()
       .nullable()
-      .required("Event date is required.")
+      
       .min(new Date(), "Event date should be in the future."),
     event_type: yup
       .string()
